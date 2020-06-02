@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-/* import App from './components/app/'; */
+import App from './components/app/';
 
 
-class WhoAmI extends Component {
+/* class WhoAmI extends Component {
   
 
     state = {
@@ -17,7 +17,7 @@ class WhoAmI extends Component {
         years : ++state.years
       }))
 
-    }
+    }  */
 
     /* nextYear() {
       console.log(1);
@@ -28,7 +28,7 @@ class WhoAmI extends Component {
       
     } */
   
-  render() {
+  /* render() {
     const {name,surname,link} = this.props;
     const {years} = this.state;
     return (
@@ -44,10 +44,10 @@ class WhoAmI extends Component {
   }
 }
 
+ */
 
 
-
-const All = () => {
+/* const All = () => {
   return(
     <>
     <WhoAmI name="John" surname= "Smith" link="facebook.com" />
@@ -58,11 +58,11 @@ const All = () => {
     </>
 
   )
-}
+} */
 
 ReactDOM.render(
   <React.StrictMode>
-    <All/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
