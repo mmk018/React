@@ -16,6 +16,17 @@ import './app.css';
 
 
 const App = () => {
+
+
+    const data = [
+        {label:'Going to learn React',
+        important: true, id:1},
+        {label:'That is so good!',
+        important: false,  id:2},
+        {label:'I need a break',
+        important: false,  id:3}
+    ];
+
     return (
         <div className="app" >
             <AppHeader></AppHeader>
@@ -25,7 +36,7 @@ const App = () => {
 
 
             </div>
-            <PostList></PostList>
+            <PostList posts={data}></PostList>
             <PostAddForm></PostAddForm>
         
         </div>
