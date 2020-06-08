@@ -8,10 +8,20 @@ import PostAddForm from '../post-add-form';
 import { Button } from 'reactstrap';
 /* import style from './App.module.css'; */
 import './app.css';
+import styled from 'styled-components';
 
 
 
+const AppBlock = styled.div`
+    margin: 0 auto;
+    max-width: 800px;
+`;
 
+
+const StyledAppBlock = styled(AppBlock)`
+    background-color: grey;
+
+`
 
 
 
@@ -30,7 +40,7 @@ const App = () => {
     ];
 
     return (
-        <div className="app" >
+        <StyledAppBlock  >
             <AppHeader></AppHeader>
             <div className="search-panel d-flex">
                 <SearchPanel></SearchPanel>
@@ -41,7 +51,7 @@ const App = () => {
             <PostList posts={data}></PostList>
             <PostAddForm></PostAddForm>
         
-        </div>
+        </StyledAppBlock>
         )
 }
 
