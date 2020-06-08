@@ -40,7 +40,7 @@ const App = () => {
     ];
 
     return (
-        <StyledAppBlock  >
+        <AppBlock  >
             <AppHeader></AppHeader>
             <div className="search-panel d-flex">
                 <SearchPanel></SearchPanel>
@@ -48,10 +48,11 @@ const App = () => {
 
 
             </div>
-            <PostList posts={data}></PostList>
+            <PostList posts={data}
+            onDelete={id => console.log(id)}></PostList>
             <PostAddForm></PostAddForm>
         
-        </StyledAppBlock>
+        </AppBlock>
         )
 }
 
